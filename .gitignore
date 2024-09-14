@@ -1,0 +1,4 @@
+Data
+.venv
+Data/*.txt
+notebooks/*.csv
