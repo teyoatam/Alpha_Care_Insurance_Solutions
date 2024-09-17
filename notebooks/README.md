@@ -1,32 +1,34 @@
-Task 1:
-Git and GitHub Project Planning - EDA & Stats
+Task 3: Statistical Analysis of Gender Impact on Insurance Claims and Vehicle Types
+Overview
+This project involves conducting statistical tests to analyze the impact of gender on insurance claims and vehicle type distributions. The goal is to determine if there are significant differences in claims behavior and vehicle preferences between male and female policyholders. The findings will inform business strategy and enhance customer experience.
 
-Task 2:
-Data Version Control (DVC)
-
-EDA is crucial for understanding the data, identifying patterns, and gaining insights. Here are the steps you should follow:
-Data Summarization:
-
-Calculate descriptive statistics (mean, median, standard deviation, etc.) for numerical features like TotalPremium and TotalClaims.
-Review the data types (dtype) of each column to ensure proper formatting (e.g., categorical variables, dates).
-Data Quality Assessment:
-
-Check for missing values in any of the columns.
-Handle missing values appropriately (impute or drop, depending on the context).
-Univariate Analysis:
-
-Plot histograms for numerical columns (e.g., TotalPremium, TotalClaims) to understand their distributions.
-Create bar charts for categorical columns (e.g., CoverType, MaritalStatus) to visualize their frequencies.
-Bivariate or Multivariate Analysis:
-
-Explore correlations and associations between variables.
-Specifically, investigate how monthly changes in TotalPremium relate to TotalClaims based on geographical factors (e.g., ZipCode). Scatter plots and correlation matrices can be useful here.
-Data Comparison:
-
-Analyze trends over geography. Compare changes in insurance cover type, premium, and auto make across different regions.
-Outlier Detection:
-
-Use box plots to identify outliers in numerical data (e.g., unusually high or low TotalPremium values).
+Objectives
+Perform statistical tests (t-tests and chi-squared tests) to evaluate the impact of gender on:
+Claims submitted by policyholders.
+Distribution of vehicle types owned by policyholders.
+Document and interpret the results within the context of their impact on business strategy and customer experience.
+Data Requirements
+A CSV file containing the following columns:
+Gender: Categorical variable indicating the gender of the policyholder (e.g., Male, Female).
+Claims: Numerical variable representing the number of claims submitted by the policyholder.
+VehicleType: Categorical variable indicating the type of vehicle owned (e.g., Car, Truck, SUV).
+Statistical Tests Conducted
+T-test for Claims:
+Compares the average claims submitted by male and female policyholders.
+Null Hypothesis: Gender does not significantly impact claims submitted.
+Chi-squared Test for Vehicle Type:
+Assesses whether the distribution of vehicle types varies by gender.
+Null Hypothesis: Gender does not significantly associate with vehicle type distribution.
+Implementation Steps
+Load the Dataset:
+Use pandas to read the CSV file containing the insurance data.
+Data Preparation:
+Ensure the relevant columns (Claims, Gender, VehicleType) exist in the dataset.
+Statistical Analysis:
+Conduct a t-test for claims based on gender.
+Conduct a chi-squared test for vehicle type distribution based on gender.
+Results Interpretation:
+Analyze p-values from the statistical tests to determine if the null hypotheses can be rejected.
+Document findings and implications for business strategy and customer experience.
 Visualization:
-
-Create three visually appealing plots that capture key insights from your EDA. These could include trend lines, geographical heatmaps, or other relevant visualizations.
+Use seaborn and matplotlib to create visual representations of the claims distribution and vehicle type distribution by gender.
